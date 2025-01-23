@@ -158,11 +158,6 @@ lngui_show_command_tips() { ; show tooltip with commands
         SetTimer(() => ToolTip(), -10000)
     } }
 
-lngui_show_all_command_tips() { ; show tooltip with commands
-    ToolTip(lngui_props.commands, 500, 0)
-    SetTimer(() => ToolTip(), -10000)
-}
-
 Toggle_lngui_search_state()
 {
     if (is_lngui_state("search"))
@@ -265,7 +260,6 @@ Down::
 Tab::
 {
     Toggle_lngui_search_state()
-    ; lngui_show_all_command_tips()
 }
 #HotIf
 
