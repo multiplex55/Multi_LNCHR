@@ -1,0 +1,145 @@
+?                         : ?
+a dir                     : Directory of LNCHR
+a ex                      : Exit lnchr
+a mem                     : LNCHR Memory File
+a rec                     : Recompile LNCHR
+a rel                     : Reload Script
+a sag                     : Search and Generate Commands
+a slc                     : Sort LNCHR Config
+ah f l                    : Autohotkey AHK Folder LNCHR
+ah f p                    : Autohotkey AHK Folder Packages
+ah f r                    : Autohotkey AHK Folder Root
+ah f t                    : Autohotkey AHK Folder Testing
+ah for                    : Autohotkey Forum
+ah h                      : Autohotkey Help
+ah ma                     : Autohotkey Mute Active Application Script
+ah uia                    : Autohotkey UIA Tree Viewer
+ah wsd                    : Autohotkey Winspy Delta
+ama                       : Amazon
+c                         : Calculator
+caps                      : Toggle Cap Lock
+cgpt                      : Chat GPT
+ci                        : Chrome Incognito
+dis                       : Activate Discord
+emo                       : Emojis
+exer                      : Exercise RX Search
+fcdr                      : Folder C Drive
+fdesk                     : Folder desk
+fdoc                      : Folder My Documents
+fdown                     : Folder Downloads
+fdrop                     : Folder Dropbox
+fnvcf                     : Folder Neo Vim Config Folder
+fnvcgit                   : Folder Neo Vim Config Git
+fobs                      : Folder Obsidian
+fsharex                   : Folder ShareX folder
+fst                       : Folder Startup
+fw                        : Visual Studio Code Workspaces
+g                         : Google
+gdri                      : Google Drive
+gimp                      : Run Gimp
+gitd                      : Github Desktop
+gitw                      : Github Website
+gmal                      : Gmail
+gmap                      : Google Maps
+mail                      : Yahoo Mail
+n f r                     : Nim Folder Location root
+n i                       : Nim Index
+np                        : Notepad
+obs                       : Activate Obsidian
+ont                       : OnTopReplica
+osrs                      : Old School Runescape Search
+pai                       : MS Paint
+pc                        : My Pc
+pdp                       : Phone Link Bring To Desktop Primary
+pds                       : Phone Link Bring To Desktop Secondary
+pwe                       : PW E
+pwk                       : PW k
+pww                       : PW wow
+r                         : Run Anything
+rec                       : Recycle Bin
+red map                   : Reddit Map of Reddit
+red ms                    : Reddit My Stuff
+red osrs                  : Reddit OSRS
+red rs                    : Reddit Runescape
+red tfd                   : Reddit The First Descendant
+red war                   : Reddit Warframe
+redd                      : Reddit
+reds                      : Reddit Search
+resxplorer                : Restart Explorer
+rs                        : Runescape Search
+rss                       : Runescape Start
+s                         : Spotify
+stea                      : Activate Steam
+sw                        : Activate Swiftpoint
+ta                        : Timer Create Add
+td                        : Timer Delete
+tl                        : Timer List
+tm                        : Task Manager
+tn                        : Timer Notepad Log FIle
+vall                      : Video Game All games at one time- melvor, space, warframe
+vbdo                      : Video Game Black Desert
+vdest                     : Destiny 2
+vdl                       : Virtual Desktop Left
+vdr                       : Virtual Desktop Right
+vm                        : Volume Mixer
+vsc                       : Run Visual Studio Code
+vspace                    : Video Game Unnamed Space Idle
+vwar                      : Video Game Warframe
+w                         : Wolfram Alpha
+weag                      : Weather Google
+weawi                     : Weather Windy
+weawo                     : Weather Wow
+wo r                      : Workspaces Root
+wow cur                   : Wow Curse forge addons
+wow elv                   : Wow Elvui
+wow f log                 : Wow folder logs location
+wow mmo                   : Wow mmo champion
+wow raid tank cheat sheet : Wow Google Sheet raid cheat sheet
+wow rbs                   : Wow Raidbots simulation
+wow rio p                 : Wow Raider IO Profile
+wow wh dh h               : Wow Wowhead DH Havoc
+wow wh dh v               : Wow Wowhead DH Veng
+wow wh dk b               : Wow Wowhead DK Blood
+wow wh dk f               : Wow Wowhead DK Frost
+wow wh dk u               : Wow Wowhead DK Unholy
+wow wh dr b               : Wow Wowhead Druid Balance
+wow wh dr f               : Wow Wowhead Druid Feral
+wow wh dr g               : Wow Wowhead Druid Guard
+wow wh dr r               : Wow Wowhead Druid Resto
+wow wh ev a               : Wow Wowhead Evoker Augmentation
+wow wh ev d               : Wow Wowhead Evoker Devastation
+wow wh ev p               : Wow Wowhead Evoker Preservation
+wow wh h b                : Wow Wowhead Hunter Beastmaster
+wow wh h m                : Wow Wowhead Hunter Marksman
+wow wh h s                : Wow Wowhead Hunter Survival
+wow wh ma a               : Wow Wowhead Mage Arcane
+wow wh ma fi              : Wow Wowhead Mage Fire
+wow wh ma fr              : Wow Wowhead Mage Frost
+wow wh mo b               : Wow Wowhead Monk Brew
+wow wh mo m               : Wow Wowhead Monk Mistweaver
+wow wh mo w               : Wow Wowhead Monk Windwalker
+wow wh pa h               : Wow Wowhead Paladin Holy
+wow wh pa p               : Wow Wowhead Paladin Protection
+wow wh pa r               : Wow Wowhead Paladin Ret
+wow wh pr d               : Wow Wowhead Priest Disc
+wow wh pr h               : Wow Wowhead Priest Holy
+wow wh pr s               : Wow Wowhead Priest Shadow
+wow wh r a                : Wow Wowhead Rogue Assassination
+wow wh r o                : Wow Wowhead Rogue Outlaw
+wow wh r s                : Wow Wowhead Rogue Subtlety
+wow wh s eh               : Wow Wowhead Shaman Enhancement
+wow wh s el               : Wow Wowhead Shaman Elemental
+wow wh s r                : Wow Wowhead Shaman Resto
+wow wh w a                : Wow Wowhead Warrior Arms
+wow wh w aff              : Wow Wowhead Warlock Affliction
+wow wh w dem              : Wow Wowhead Warlock Demonology
+wow wh w des              : Wow Wowhead Warlock Destruction
+wow wh w f                : Wow Wowhead Warrior Fury
+wow wh w p                : Wow Wowhead Warrior Protection
+wow wla                   : Wow Warcraft Logs Uploader App
+wow wlw                   : Wow Warcraft Logs Website
+wuwa chars                : Wuthering Waves Character Tier List
+wuwa guides               : Wuthering Waves Guides
+yth                       : YouTube Home
+yts                       : YouTube Search
+ytw                       : YouTube Watch Later
