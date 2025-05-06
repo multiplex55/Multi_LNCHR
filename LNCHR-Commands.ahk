@@ -132,6 +132,13 @@ lngui_run_commands(input)
         return
     }
 
+    if (input == "baze") ; Bazecor
+    {
+        close_lngui()
+        WinActivate("Bazecor")
+        return
+    }
+
     if (input == "c ") ; Calculator
     {
         lngui_enable_calc()
@@ -154,7 +161,9 @@ lngui_run_commands(input)
 
     if (input == "ci ") ; Chrome Incognito
     {
-        lngui_enable_query("Google Private", make_run_ReplaceTexts_func("C:\Program Files\Google\Chrome\Application\chrome.exe -incognito https://www.google.com/search?q=REPLACEME"))
+        lngui_enable_query("Google Private", make_run_ReplaceTexts_func(
+            "C:\Program Files\Google\Chrome\Application\chrome.exe -incognito https://www.google.com/search?q=REPLACEME"
+        ))
         return
     }
 
@@ -174,7 +183,9 @@ lngui_run_commands(input)
 
     if (input == "exer ") ; Exercise RX Search
     {
-        lngui_enable_query("Exercise RX Search", make_run_ReplaceTexts_func("https://www.google.com/search?num=50&safe=off&site=&source=hp&q=site:https://exrx.net/ REPLACEME&btnG=Search&oq=&gs_l="))
+        lngui_enable_query("Exercise RX Search", make_run_ReplaceTexts_func(
+            "https://www.google.com/search?num=50&safe=off&site=&source=hp&q=site:https://exrx.net/ REPLACEME&btnG=Search&oq=&gs_l="
+        ))
         return
     }
 
@@ -257,7 +268,8 @@ lngui_run_commands(input)
 
     if (input == "g ") ; Google
     {
-        lngui_enable_query("Google", make_run_ReplaceTexts_func("https://www.google.com/search?num=50&safe=off&site=&source=hp&q=REPLACEME&btnG=Search&oq=&gs_l="))
+        lngui_enable_query("Google", make_run_ReplaceTexts_func(
+            "https://www.google.com/search?num=50&safe=off&site=&source=hp&q=REPLACEME&btnG=Search&oq=&gs_l="))
         return
     }
 
@@ -316,6 +328,13 @@ lngui_run_commands(input)
         return
     }
 
+    if (input == "mm") ; MouseMaster
+    {
+        close_lngui()
+        tryrun(TryGetValueFromINIFile("MouseMasterLocation"))
+        return
+    }
+
     if (input == "n f r") ; Nim Folder Location root
     {
         close_lngui()
@@ -337,6 +356,13 @@ lngui_run_commands(input)
         return
     }
 
+    if (input == "nv") ; Neovide
+    {
+        close_lngui()
+        tryrun(TryGetValueFromINIFile("Neovide"))
+        return
+    }
+
     if (input == "obs") ; Activate Obsidian
     {
         close_lngui()
@@ -347,7 +373,8 @@ lngui_run_commands(input)
     if (input == "ont") ; OnTopReplica
     {
         close_lngui()
-        tryrun("C:\Users\" . A_Username . "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OnTopReplica\OnTopReplica.lnk")
+        tryrun("C:\Users\" . A_Username .
+            "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OnTopReplica\OnTopReplica.lnk")
         return
     }
 
@@ -470,7 +497,8 @@ lngui_run_commands(input)
 
     if (input == "reds") ; Reddit Search
     {
-        lngui_enable_query("Reddit", make_run_ReplaceTexts_func("https://www.reddit.com/search?q=REPLACEME&include_over_18=on&sort=relevance&t=all"))
+        lngui_enable_query("Reddit", make_run_ReplaceTexts_func(
+            "https://www.reddit.com/search?q=REPLACEME&include_over_18=on&sort=relevance&t=all"))
         return
     }
 
@@ -482,9 +510,17 @@ lngui_run_commands(input)
         return
     }
 
+    if (input == "rnv") ; Restart Neovide
+    {
+        close_lngui()
+        restartNeovide()
+        return
+    }
+
     if (input == "rs ") ; Runescape Search
     {
-        lngui_enable_query("RS3 ", make_run_ReplaceTexts_func("https://runescape.wiki/w/Special:Search?search=REPLACEME"))
+        lngui_enable_query("RS3 ", make_run_ReplaceTexts_func(
+            "https://runescape.wiki/w/Special:Search?search=REPLACEME"))
         return
     }
 
@@ -618,7 +654,8 @@ lngui_run_commands(input)
 
     if (input == "w ") ; Wolfram Alpha
     {
-        lngui_enable_query("Wolfram Alpha", make_run_ReplaceTexts_func("https://www.wolframalpha.com/input/?i=REPLACEME"))
+        lngui_enable_query("Wolfram Alpha", make_run_ReplaceTexts_func(
+            "https://www.wolframalpha.com/input/?i=REPLACEME"))
         return
     }
 
@@ -1009,7 +1046,8 @@ lngui_run_commands(input)
 
     if (input == "yts ") ; YouTube Search
     {
-        lngui_enable_query("YouTube", make_run_ReplaceTexts_func("https://www.youtube.com/results?search_query=REPLACEME"))
+        lngui_enable_query("YouTube", make_run_ReplaceTexts_func(
+            "https://www.youtube.com/results?search_query=REPLACEME"))
         return
     }
 

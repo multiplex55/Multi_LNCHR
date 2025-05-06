@@ -503,4 +503,13 @@ TryGetValueFromINIFile(keyToFind)
     return valueToReturn
 }
 
+restartNeovide()
+{
+    if (WinExist("Neovide"))
+    {
+        winclose("Neovide")
+    }
+    tryrun(TryGetValueFromINIFile("Neovide"))
+}
+
 Suspend 0 ; re-enable hot keys

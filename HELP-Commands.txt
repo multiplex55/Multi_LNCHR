@@ -16,6 +16,7 @@ ah ma                     : Autohotkey Mute Active Application Script
 ah uia                    : Autohotkey UIA Tree Viewer
 ah wsd                    : Autohotkey Winspy Delta
 ama                       : Amazon
+baze                      : Bazecor
 c                         : Calculator
 caps                      : Toggle Cap Lock
 cgpt                      : Chat GPT
@@ -42,9 +43,11 @@ gitw                      : Github Website
 gmal                      : Gmail
 gmap                      : Google Maps
 mail                      : Yahoo Mail
+mm                        : MouseMaster
 n f r                     : Nim Folder Location root
 n i                       : Nim Index
 np                        : Notepad
+nv                        : Neovide
 obs                       : Activate Obsidian
 ont                       : OnTopReplica
 osrs                      : Old School Runescape Search
@@ -66,6 +69,7 @@ red war                   : Reddit Warframe
 redd                      : Reddit
 reds                      : Reddit Search
 resxplorer                : Restart Explorer
+rnv                       : Restart Neovide
 rs                        : Runescape Search
 rss                       : Runescape Start
 s                         : Spotify
