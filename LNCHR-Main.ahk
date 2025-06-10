@@ -502,7 +502,7 @@ restartNeovide()
     {
         winclose("Neovide")
     }
-    tryrun(TryGetValueFromINIFile("Neovide"))
+    TryRun(TryGetValueFromINIFile("Neovide"))
 }
 
 Suspend 0 ; re-enable hot keys

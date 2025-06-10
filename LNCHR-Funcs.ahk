@@ -73,7 +73,7 @@ run_ReplaceText(replacement, runString) {
     }
     ; assume proper formatting for command line stuff
     runString := StrReplace(runstring, "REPLACEME", replacement)
-    tryrun(runString)
+    TryRun(runString)
 }
 
 
@@ -165,7 +165,7 @@ OpenVolumeMixer() {
 
 OpenAutohotkeyHelpWithDarkMode()
 {
-    tryrun(TryGetValueFromINIFile("AutohotkeyHelpPath"))
+    TryRun(TryGetValueFromINIFile("AutohotkeyHelpPath"))
     Sleep(500)
     WinActivate("AutoHotkey v2 Help")
     if (WinActive("AutoHotkey v2 Help"))
@@ -262,7 +262,7 @@ js_math_exp_helper(exp)
 
 
 run_calc_shortcut_then_return(s) {
-    tryrun(s)
+    TryRun(s)
     set_lngui_input()
     Sleep(200)
     WinActivate(lngui.Hwnd)

@@ -7,7 +7,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "\"HELP-Commands.txt\""
         ]
@@ -36,7 +36,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'%A_ScriptDir%\\..\\'"
         ]
@@ -64,7 +64,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'\"LNCHR-Memory.ini\"'"
         ]
@@ -149,7 +149,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"LNCHRFolderPath\")"
         ]
@@ -164,7 +164,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"AutohotkeyPackages\")"
         ]
@@ -179,7 +179,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"AuthotkeyRootPath\")"
         ]
@@ -194,7 +194,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"AutohotkeyTestingFolderLocation\")"
         ]
@@ -209,7 +209,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "\"https://www.autohotkey.com/boards/viewforum.php?f=83\""
         ]
@@ -237,7 +237,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"AutohotkeyMuteActiveApplication\")"
         ]
@@ -252,7 +252,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"AutohotkeyUIAInspectorPath\")"
         ]
@@ -267,7 +267,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"AutohotkeyWinspyDelta\")"
         ]
@@ -282,7 +282,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'https://www.amazon.com/'"
         ]
@@ -399,7 +399,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'C:\\'"
         ]
@@ -414,7 +414,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'\"C:\\Users\\' A_Username '\\Desktop\"'"
         ]
@@ -429,7 +429,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'\"C:\\Users\\' A_Username '\\Documents\"'"
         ]
@@ -444,7 +444,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'\"C:\\Users\\' A_Username '\\Downloads\"'"
         ]
@@ -459,7 +459,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"DropboxFolderPath\")"
         ]
@@ -474,7 +474,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"NeovimConfigFolderLocation\")"
         ]
@@ -489,7 +489,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"NeovimGithubConfigFolderLocation\")"
         ]
@@ -504,7 +504,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"ObsidianFolderLocation\")"
         ]
@@ -519,7 +519,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"SharexFolderPath\")"
         ]
@@ -534,7 +534,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "\"C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\""
         ]
@@ -549,7 +549,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"FolderWorkspace\")"
         ]
@@ -574,7 +574,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'www.drive.google.com/'"
         ]
@@ -641,7 +641,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'https://github.com/multiplex55'"
         ]
@@ -656,7 +656,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'https://mail.google.com/'"
         ]
@@ -671,7 +671,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'https://www.google.com/maps/'"
         ]
@@ -701,7 +701,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"MouseMasterLocation\")"
         ]
@@ -746,7 +746,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'Notepad'"
         ]
@@ -761,7 +761,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"Neovide\")"
         ]
@@ -791,7 +791,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "\"C:\\Users\\\" . A_Username . \"\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\OnTopReplica\\OnTopReplica.lnk\""
         ]
@@ -816,7 +816,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'C:\\Windows\\system32\\mspaint.exe'"
         ]
@@ -831,7 +831,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'explorer ='"
         ]
@@ -933,7 +933,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'::{645FF040-5081-101B-9F08-00AA002F954E}'"
         ]
@@ -948,7 +948,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "\"https://anvaka.github.io/map-of-reddit/?x=18239&y=12514&z=23244.04817852816&v=2\""
         ]
@@ -963,7 +963,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"MyRedditStuff\")"
         ]
@@ -978,7 +978,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "\"https://www.reddit.com/r/2007scape/\""
         ]
@@ -993,7 +993,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "\"https://www.reddit.com/r/runescape/\""
         ]
@@ -1008,7 +1008,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "\"https://www.reddit.com/r/TheFirstDescendant/\""
         ]
@@ -1023,7 +1023,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "\"https://www.reddit.com/r/Warframe\""
         ]
@@ -1038,7 +1038,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'www.reddit.com'"
         ]
@@ -1191,7 +1191,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'taskmgr'"
         ]
@@ -1397,7 +1397,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"GoogleWeather\")"
         ]
@@ -1412,7 +1412,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"WindyWeatherPath\")"
         ]
@@ -1427,7 +1427,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "'https://weawow.com/'"
         ]
@@ -1442,7 +1442,7 @@
         "args": []
       },
       {
-        "func": "tryrun",
+        "func": "TryRun",
         "args": [
           "TryGetValueFromINIFile(\"FolderWorkspace\")"
         ]
