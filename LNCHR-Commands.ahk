@@ -22,23 +22,23 @@ lngui_run_commands(input)
     cmd := cmds[input]
     if (cmd.Has("type"))
     {
-        switch cmd.type
+        switch cmd["type"]
         {
             case "query":
-                lngui_enable_query(cmd.label, make_run_ReplaceTexts_func(cmd.url))
+                lngui_enable_query(cmd["label"], make_run_ReplaceTexts_func(cmd["url"]))
                 return
             case "queryfunc":
-                lngui_enable_query(cmd.label, Func(cmd.function))
+                lngui_enable_query(cmd["label"], Func(cmd["function"]))
                 return
         }
     }
 
     if (cmd.Has("ops"))
     {
-        for _, op in cmd.ops
+        for _, op in cmd["ops"]
         {
-            fn := op.func
-            args := op.HasOwnProp("args") ? op.args : []
+            fn := op["func"]
+            args := op.HasOwnProp("args") ? op["args"] : []
             Func(fn).Call(args*)
         }
     }

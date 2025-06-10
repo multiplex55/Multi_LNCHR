@@ -373,7 +373,7 @@ ParseCommandsConfig(filePath)
 
     for key, obj in commands
     {
-        desc := obj.description
+        desc := obj["description"]
         value := LNCHRCommandBlock("", key, desc)
         parseDict[key] := value
     }

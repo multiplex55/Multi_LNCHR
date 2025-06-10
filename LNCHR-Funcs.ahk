@@ -119,7 +119,7 @@ SearchLNCHRFileAndGenerateHelp()
     outFile := FileOpen("HELP-Commands.txt", "w")
     for key, obj in commands
     {
-        outFile.WriteLine(Format("{:-" . longestCommand . "}", key) . " : " . obj.description)
+        outFile.WriteLine(Format("{:-" . longestCommand . "}", key) . " : " . obj["description"])
     }
     outFile.Close()
 }
