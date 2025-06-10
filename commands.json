@@ -1,0 +1,2242 @@
+{
+  "?": {
+    "description": "?",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "\"HELP-Commands.txt\""
+        ]
+      },
+      {
+        "func": "Sleep",
+        "args": [
+          "100"
+        ]
+      },
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "build_lngui",
+        "args": []
+      }
+    ]
+  },
+  "a dir": {
+    "description": "Directory of LNCHR",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'%A_ScriptDir%\\..\\'"
+        ]
+      }
+    ]
+  },
+  "a ex": {
+    "description": "Exit lnchr",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "ExitApp",
+        "args": []
+      }
+    ]
+  },
+  "a mem": {
+    "description": "LNCHR Memory File",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'\"LNCHR-Memory.ini\"'"
+        ]
+      }
+    ]
+  },
+  "a rec": {
+    "description": "Recompile LNCHR",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"LNCHR-Recompile.exe\""
+        ]
+      }
+    ]
+  },
+  "a rel": {
+    "description": "Reload Script",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "Reload",
+        "args": []
+      }
+    ]
+  },
+  "a sag": {
+    "description": "Search and Generate Commands",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "Sleep",
+        "args": [
+          "100"
+        ]
+      },
+      {
+        "func": "FileDelete",
+        "args": [
+          "\"HELP-Commands.txt\""
+        ]
+      },
+      {
+        "func": "SearchLNCHRFileAndGenerateHelp",
+        "args": []
+      },
+      {
+        "func": "Reload",
+        "args": []
+      }
+    ]
+  },
+  "a slc": {
+    "description": "Sort LNCHR Config",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "SortLNCHRConfigFile",
+        "args": []
+      }
+    ]
+  },
+  "ah f l": {
+    "description": "Autohotkey AHK Folder LNCHR",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"LNCHRFolderPath\")"
+        ]
+      }
+    ]
+  },
+  "ah f p": {
+    "description": "Autohotkey AHK Folder Packages",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"AutohotkeyPackages\")"
+        ]
+      }
+    ]
+  },
+  "ah f r": {
+    "description": "Autohotkey AHK Folder Root",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"AuthotkeyRootPath\")"
+        ]
+      }
+    ]
+  },
+  "ah f t": {
+    "description": "Autohotkey AHK Folder Testing",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"AutohotkeyTestingFolderLocation\")"
+        ]
+      }
+    ]
+  },
+  "ah for": {
+    "description": "Autohotkey Forum",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "\"https://www.autohotkey.com/boards/viewforum.php?f=83\""
+        ]
+      }
+    ]
+  },
+  "ah h": {
+    "description": "Autohotkey Help",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "OpenAutohotkeyHelpWithDarkMode",
+        "args": []
+      }
+    ]
+  },
+  "ah ma": {
+    "description": "Autohotkey Mute Active Application Script",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"AutohotkeyMuteActiveApplication\")"
+        ]
+      }
+    ]
+  },
+  "ah uia": {
+    "description": "Autohotkey UIA Tree Viewer",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"AutohotkeyUIAInspectorPath\")"
+        ]
+      }
+    ]
+  },
+  "ah wsd": {
+    "description": "Autohotkey Winspy Delta",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"AutohotkeyWinspyDelta\")"
+        ]
+      }
+    ]
+  },
+  "ama": {
+    "description": "Amazon",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'https://www.amazon.com/'"
+        ]
+      }
+    ]
+  },
+  "baze": {
+    "description": "Bazecor",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "WinActivate",
+        "args": [
+          "\"Bazecor\""
+        ]
+      }
+    ]
+  },
+  "c ": {
+    "description": "Calculator",
+    "ops": [
+      {
+        "func": "lngui_enable_calc",
+        "args": []
+      }
+    ]
+  },
+  "caps": {
+    "description": "Toggle Cap Lock",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "toggleCapsLock",
+        "args": []
+      }
+    ]
+  },
+  "cgpt": {
+    "description": "Chat GPT",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://chatgpt.com/\""
+        ]
+      }
+    ]
+  },
+  "ci ": {
+    "description": "Chrome Incognito",
+    "ops": [
+      {
+        "type": "queryfunc",
+        "label": "Google Private",
+        "function": "make_run_ReplaceTexts_func( \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe -incognito https://www.google.com/search?q=REPLACEME\" )"
+      }
+    ]
+  },
+  "dis": {
+    "description": "Activate Discord",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "WinActivate",
+        "args": [
+          "\"Discord\""
+        ]
+      }
+    ]
+  },
+  "emo": {
+    "description": "Emojis",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "SendInput",
+        "args": [
+          "'#.'"
+        ]
+      }
+    ]
+  },
+  "exer ": {
+    "description": "Exercise RX Search",
+    "ops": [
+      {
+        "type": "queryfunc",
+        "label": "Exercise RX Search",
+        "function": "make_run_ReplaceTexts_func( \"https://www.google.com/search?num=50&safe=off&site=&source=hp&q=site:https://exrx.net/ REPLACEME&btnG=Search&oq=&gs_l=\" )"
+      }
+    ]
+  },
+  "fcdr": {
+    "description": "Folder C Drive",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'C:\\'"
+        ]
+      }
+    ]
+  },
+  "fdesk": {
+    "description": "Folder desk",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'\"C:\\Users\\' A_Username '\\Desktop\"'"
+        ]
+      }
+    ]
+  },
+  "fdoc": {
+    "description": "Folder My Documents",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'\"C:\\Users\\' A_Username '\\Documents\"'"
+        ]
+      }
+    ]
+  },
+  "fdown": {
+    "description": "Folder Downloads",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'\"C:\\Users\\' A_Username '\\Downloads\"'"
+        ]
+      }
+    ]
+  },
+  "fdrop": {
+    "description": "Folder Dropbox",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"DropboxFolderPath\")"
+        ]
+      }
+    ]
+  },
+  "fnvcf": {
+    "description": "Folder Neo Vim Config Folder",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"NeovimConfigFolderLocation\")"
+        ]
+      }
+    ]
+  },
+  "fnvcgit": {
+    "description": "Folder Neo Vim Config Git",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"NeovimGithubConfigFolderLocation\")"
+        ]
+      }
+    ]
+  },
+  "fobs": {
+    "description": "Folder Obsidian",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"ObsidianFolderLocation\")"
+        ]
+      }
+    ]
+  },
+  "fsharex": {
+    "description": "Folder ShareX folder",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"SharexFolderPath\")"
+        ]
+      }
+    ]
+  },
+  "fst": {
+    "description": "Folder Startup",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "\"C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\""
+        ]
+      }
+    ]
+  },
+  "fw": {
+    "description": "Visual Studio Code Workspaces",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"FolderWorkspace\")"
+        ]
+      }
+    ]
+  },
+  "g ": {
+    "description": "Google",
+    "ops": [
+      {
+        "type": "query",
+        "label": "Google",
+        "url": "https://www.google.com/search?num=50&safe=off&site=&source=hp&q=REPLACEME&btnG=Search&oq=&gs_l="
+      }
+    ]
+  },
+  "gdri": {
+    "description": "Google Drive",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'www.drive.google.com/'"
+        ]
+      }
+    ]
+  },
+  "gimp": {
+    "description": "Run Gimp",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "RunOrActivateGimp",
+        "args": []
+      }
+    ]
+  },
+  "gitd": {
+    "description": "Github Desktop",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "Send",
+        "args": [
+          "\"{LWin}\""
+        ]
+      },
+      {
+        "func": "Sleep",
+        "args": [
+          "200"
+        ]
+      },
+      {
+        "func": "SendText",
+        "args": [
+          "\"Github Desktop\""
+        ]
+      },
+      {
+        "func": "Sleep",
+        "args": [
+          "200"
+        ]
+      },
+      {
+        "func": "Send",
+        "args": [
+          "\"{Enter}\""
+        ]
+      }
+    ]
+  },
+  "gitw": {
+    "description": "Github Website",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'https://github.com/multiplex55'"
+        ]
+      }
+    ]
+  },
+  "gmal": {
+    "description": "Gmail",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'https://mail.google.com/'"
+        ]
+      }
+    ]
+  },
+  "gmap": {
+    "description": "Google Maps",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'https://www.google.com/maps/'"
+        ]
+      }
+    ]
+  },
+  "mail": {
+    "description": "Yahoo Mail",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://mail.yahoo.com/d/folders/1\""
+        ]
+      }
+    ]
+  },
+  "mm": {
+    "description": "MouseMaster",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"MouseMasterLocation\")"
+        ]
+      }
+    ]
+  },
+  "n f r": {
+    "description": "Nim Folder Location root",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "TryGetValueFromINIFile(\"NimFolderLocation\")"
+        ]
+      }
+    ]
+  },
+  "n i": {
+    "description": "Nim Index",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://nim-lang.org/docs/theindex.html\""
+        ]
+      }
+    ]
+  },
+  "np": {
+    "description": "Notepad",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'Notepad'"
+        ]
+      }
+    ]
+  },
+  "nv": {
+    "description": "Neovide",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"Neovide\")"
+        ]
+      }
+    ]
+  },
+  "obs": {
+    "description": "Activate Obsidian",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "WinActivate",
+        "args": [
+          "\"Obsidian\""
+        ]
+      }
+    ]
+  },
+  "ont": {
+    "description": "OnTopReplica",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "\"C:\\Users\\\" . A_Username . \"\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\OnTopReplica\\OnTopReplica.lnk\""
+        ]
+      }
+    ]
+  },
+  "osrs ": {
+    "description": "Old School Runescape Search",
+    "ops": [
+      {
+        "type": "query",
+        "label": "OSRS",
+        "url": "https://oldschool.runescape.wiki/?search=REPLACEME"
+      }
+    ]
+  },
+  "pai": {
+    "description": "MS Paint",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'C:\\Windows\\system32\\mspaint.exe'"
+        ]
+      }
+    ]
+  },
+  "pc": {
+    "description": "My Pc",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'explorer ='"
+        ]
+      }
+    ]
+  },
+  "pdp": {
+    "description": "Phone Link Bring To Desktop Primary",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "SendToDesktopAndActivate",
+        "args": [
+          "\"Phone Link\"",
+          "1"
+        ]
+      }
+    ]
+  },
+  "pds": {
+    "description": "Phone Link Bring To Desktop Secondary",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "SendToDesktop",
+        "args": [
+          "\"Phone Link\"",
+          "2"
+        ]
+      }
+    ]
+  },
+  "pwe": {
+    "description": "PW E",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "SetClipboardFromINI",
+        "args": [
+          "pwe"
+        ]
+      }
+    ]
+  },
+  "pwk": {
+    "description": "PW k",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "SetClipboardFromINI",
+        "args": [
+          "pwk"
+        ]
+      }
+    ]
+  },
+  "pww": {
+    "description": "PW wow",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "SetClipboardFromINI",
+        "args": [
+          "pww"
+        ]
+      }
+    ]
+  },
+  "r ": {
+    "description": "Run Anything",
+    "ops": [
+      {
+        "type": "query",
+        "label": "Run",
+        "url": "REPLACEME"
+      }
+    ]
+  },
+  "rec": {
+    "description": "Recycle Bin",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'::{645FF040-5081-101B-9F08-00AA002F954E}'"
+        ]
+      }
+    ]
+  },
+  "red map": {
+    "description": "Reddit Map of Reddit",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "\"https://anvaka.github.io/map-of-reddit/?x=18239&y=12514&z=23244.04817852816&v=2\""
+        ]
+      }
+    ]
+  },
+  "red ms": {
+    "description": "Reddit My Stuff",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"MyRedditStuff\")"
+        ]
+      }
+    ]
+  },
+  "red osrs": {
+    "description": "Reddit OSRS",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "\"https://www.reddit.com/r/2007scape/\""
+        ]
+      }
+    ]
+  },
+  "red rs": {
+    "description": "Reddit Runescape",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "\"https://www.reddit.com/r/runescape/\""
+        ]
+      }
+    ]
+  },
+  "red tfd": {
+    "description": "Reddit The First Descendant",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "\"https://www.reddit.com/r/TheFirstDescendant/\""
+        ]
+      }
+    ]
+  },
+  "red war": {
+    "description": "Reddit Warframe",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "\"https://www.reddit.com/r/Warframe\""
+        ]
+      }
+    ]
+  },
+  "redd": {
+    "description": "Reddit",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'www.reddit.com'"
+        ]
+      }
+    ]
+  },
+  "reds": {
+    "description": "Reddit Search",
+    "ops": [
+      {
+        "type": "query",
+        "label": "Reddit",
+        "url": "https://www.reddit.com/search?q=REPLACEME&include_over_18=on&sort=relevance&t=all"
+      }
+    ]
+  },
+  "resxplorer": {
+    "description": "Restart Explorer",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "Run",
+        "args": [
+          "'taskkill /f /im explorer.exe'"
+        ]
+      },
+      {
+        "func": "Run",
+        "args": [
+          "'explorer.exe'"
+        ]
+      }
+    ]
+  },
+  "rnv": {
+    "description": "Restart Neovide",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "restartNeovide",
+        "args": []
+      }
+    ]
+  },
+  "rs ": {
+    "description": "Runescape Search",
+    "ops": [
+      {
+        "type": "query",
+        "label": "RS3 ",
+        "url": "https://runescape.wiki/w/Special:Search?search=REPLACEME"
+      }
+    ]
+  },
+  "rss": {
+    "description": "Runescape Start",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "RunRunescapeJagexClients",
+        "args": []
+      }
+    ]
+  },
+  "s ": {
+    "description": "Spotify",
+    "ops": [
+      {
+        "type": "query",
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/REPLACEME"
+      }
+    ]
+  },
+  "stea": {
+    "description": "Activate Steam",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "RunOrActivateSteam",
+        "args": []
+      }
+    ]
+  },
+  "sw": {
+    "description": "Activate Swiftpoint",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "WinActivate",
+        "args": [
+          "\"Swiftpoint X1 Control Panel\""
+        ]
+      }
+    ]
+  },
+  "ta ": {
+    "description": "Timer Create Add",
+    "ops": [
+      {
+        "type": "queryfunc",
+        "label": "Timer",
+        "function": "lngui_query_timer_add"
+      }
+    ]
+  },
+  "td ": {
+    "description": "Timer Delete",
+    "ops": [
+      {
+        "type": "queryfunc",
+        "label": "Timer",
+        "function": "lngui_query_timer_delete"
+      }
+    ]
+  },
+  "tl": {
+    "description": "Timer List",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "ViewToolTipAllTimers",
+        "args": []
+      }
+    ]
+  },
+  "tm": {
+    "description": "Task Manager",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'taskmgr'"
+        ]
+      }
+    ]
+  },
+  "tn": {
+    "description": "Timer Notepad Log FIle",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "Run",
+        "args": [
+          "\"notepad.exe TimerLog.txt\""
+        ]
+      }
+    ]
+  },
+  "vall": {
+    "description": "Video Game All games at one time- melvor, space, warframe",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "GameRunStream",
+        "args": [
+          "\"MelvorIdle.exe\"",
+          "\"1267910\""
+        ]
+      },
+      {
+        "func": "Sleep",
+        "args": [
+          "1000"
+        ]
+      },
+      {
+        "func": "GameRunStream",
+        "args": [
+          "\"SpaceIdle.exe\"",
+          "\"2471100\""
+        ]
+      },
+      {
+        "func": "Sleep",
+        "args": [
+          "1000"
+        ]
+      },
+      {
+        "func": "GameRunStream",
+        "args": [
+          "\"Warframe.exe\"",
+          "\"230410\""
+        ]
+      },
+      {
+        "func": "Sleep",
+        "args": [
+          "1000"
+        ]
+      }
+    ]
+  },
+  "vbdo": {
+    "description": "Video Game Black Desert",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "GameRunStream",
+        "args": [
+          "\"Black Desert Online\"",
+          "\"582660\""
+        ]
+      }
+    ]
+  },
+  "vdest": {
+    "description": "Destiny 2",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "GameRunStream",
+        "args": [
+          "\"Destiny.exe\"",
+          "\"1085660\""
+        ]
+      }
+    ]
+  },
+  "vdl": {
+    "description": "Virtual Desktop Left",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "VirtualDesktopGoLeft",
+        "args": []
+      }
+    ]
+  },
+  "vdr": {
+    "description": "Virtual Desktop Right",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "VirtualDesktopGoRight",
+        "args": []
+      }
+    ]
+  },
+  "vm": {
+    "description": "Volume Mixer",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "OpenVolumeMixer",
+        "args": []
+      }
+    ]
+  },
+  "vsc": {
+    "description": "Run Visual Studio Code",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"C:\\Users\\\" . A_Username . \"\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\""
+        ]
+      }
+    ]
+  },
+  "vspace": {
+    "description": "Video Game Unnamed Space Idle",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "GameRunStream",
+        "args": [
+          "\"SpaceIdle.exe\"",
+          "\"2471100\""
+        ]
+      }
+    ]
+  },
+  "vwar": {
+    "description": "Video Game Warframe",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "GameRunStream",
+        "args": [
+          "\"Warframe.exe\"",
+          "\"230410\""
+        ]
+      }
+    ]
+  },
+  "w ": {
+    "description": "Wolfram Alpha",
+    "ops": [
+      {
+        "type": "query",
+        "label": "Wolfram Alpha",
+        "url": "https://www.wolframalpha.com/input/?i=REPLACEME"
+      }
+    ]
+  },
+  "weag": {
+    "description": "Weather Google",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"GoogleWeather\")"
+        ]
+      }
+    ]
+  },
+  "weawi": {
+    "description": "Weather Windy",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"WindyWeatherPath\")"
+        ]
+      }
+    ]
+  },
+  "weawo": {
+    "description": "Weather Wow",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "'https://weawow.com/'"
+        ]
+      }
+    ]
+  },
+  "wo r": {
+    "description": "Workspaces Root",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "tryrun",
+        "args": [
+          "TryGetValueFromINIFile(\"FolderWorkspace\")"
+        ]
+      }
+    ]
+  },
+  "wow cur": {
+    "description": "Wow Curse forge addons",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "TryGetValueFromINIFile(\"WowCurseForge\")"
+        ]
+      }
+    ]
+  },
+  "wow elv": {
+    "description": "Wow Elvui",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://tukui.org/elvui#\""
+        ]
+      }
+    ]
+  },
+  "wow f log": {
+    "description": "Wow folder logs location",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"E:\\BattleNet\\World of Warcraft\\_retail_\\Logs\""
+        ]
+      }
+    ]
+  },
+  "wow mmo": {
+    "description": "Wow mmo champion",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.mmo-champion.com/content/\""
+        ]
+      }
+    ]
+  },
+  "wow raid tank cheat sheet": {
+    "description": "Wow Google Sheet raid cheat sheet",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://docs.google.com/spreadsheets/d/1Cql9m6Ckh78qVhMUDI65wcmnQ2oeImXwOdYWwX3Vz40/edit?gid=0#gid=0\""
+        ]
+      }
+    ]
+  },
+  "wow rbs": {
+    "description": "Wow Raidbots simulation",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.raidbots.com/simbot\""
+        ]
+      }
+    ]
+  },
+  "wow rio p": {
+    "description": "Wow Raider IO Profile",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://raider.io/characters/us/thrall/Multitiamat\""
+        ]
+      }
+    ]
+  },
+  "wow wh dh h": {
+    "description": "Wow Wowhead DH Havoc",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/demon-hunter/havoc/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh dh v": {
+    "description": "Wow Wowhead DH Veng",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/demon-hunter/vengeance/overview-pve-tank\""
+        ]
+      }
+    ]
+  },
+  "wow wh dk b": {
+    "description": "Wow Wowhead DK Blood",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/death-knight/blood/overview-pve-tank\""
+        ]
+      }
+    ]
+  },
+  "wow wh dk f": {
+    "description": "Wow Wowhead DK Frost",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/death-knight/frost/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh dk u": {
+    "description": "Wow Wowhead DK Unholy",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/death-knight/unholy/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh dr b": {
+    "description": "Wow Wowhead Druid Balance",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/druid/balance/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh dr f": {
+    "description": "Wow Wowhead Druid Feral",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/druid/feral/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh dr g": {
+    "description": "Wow Wowhead Druid Guard",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/druid/guardian/overview-pve-tank\""
+        ]
+      }
+    ]
+  },
+  "wow wh dr r": {
+    "description": "Wow Wowhead Druid Resto",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/druid/restoration/overview-pve-healer\""
+        ]
+      }
+    ]
+  },
+  "wow wh ev a": {
+    "description": "Wow Wowhead Evoker Augmentation",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/evoker/augmentation/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh ev d": {
+    "description": "Wow Wowhead Evoker Devastation",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/evoker/devastation/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh ev p": {
+    "description": "Wow Wowhead Evoker Preservation",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/evoker/preservation/overview-pve-healer\""
+        ]
+      }
+    ]
+  },
+  "wow wh h b": {
+    "description": "Wow Wowhead Hunter Beastmaster",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/hunter/beast-mastery/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh h m": {
+    "description": "Wow Wowhead Hunter Marksman",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/hunter/marksmanship/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh h s": {
+    "description": "Wow Wowhead Hunter Survival",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/hunter/survival/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh ma a": {
+    "description": "Wow Wowhead Mage Arcane",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/mage/arcane/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh ma fi": {
+    "description": "Wow Wowhead Mage Fire",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/mage/fire/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh ma fr": {
+    "description": "Wow Wowhead Mage Frost",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/mage/frost/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh mo b": {
+    "description": "Wow Wowhead Monk Brew",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/monk/brewmaster/overview-pve-tank\""
+        ]
+      }
+    ]
+  },
+  "wow wh mo m": {
+    "description": "Wow Wowhead Monk Mistweaver",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/monk/mistweaver/overview-pve-healer\""
+        ]
+      }
+    ]
+  },
+  "wow wh mo w": {
+    "description": "Wow Wowhead Monk Windwalker",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/monk/windwalker/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh pa h": {
+    "description": "Wow Wowhead Paladin Holy",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/paladin/holy/overview-pve-healer\""
+        ]
+      }
+    ]
+  },
+  "wow wh pa p": {
+    "description": "Wow Wowhead Paladin Protection",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/paladin/protection/overview-pve-tank\""
+        ]
+      }
+    ]
+  },
+  "wow wh pa r": {
+    "description": "Wow Wowhead Paladin Ret",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/paladin/retribution/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh pr d": {
+    "description": "Wow Wowhead Priest Disc",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/priest/discipline/overview-pve-healer\""
+        ]
+      }
+    ]
+  },
+  "wow wh pr h": {
+    "description": "Wow Wowhead Priest Holy",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/priest/holy/overview-pve-healer\""
+        ]
+      }
+    ]
+  },
+  "wow wh pr s": {
+    "description": "Wow Wowhead Priest Shadow",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/priest/shadow/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh r a": {
+    "description": "Wow Wowhead Rogue Assassination",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/rogue/assassination/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh r o": {
+    "description": "Wow Wowhead Rogue Outlaw",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/rogue/outlaw/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh r s": {
+    "description": "Wow Wowhead Rogue Subtlety",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/rogue/subtlety/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh s eh": {
+    "description": "Wow Wowhead Shaman Enhancement",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/shaman/enhancement/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh s el": {
+    "description": "Wow Wowhead Shaman Elemental",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/shaman/elemental/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh s r": {
+    "description": "Wow Wowhead Shaman Resto",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/shaman/restoration/overview-pve-healer\""
+        ]
+      }
+    ]
+  },
+  "wow wh w a": {
+    "description": "Wow Wowhead Warrior Arms",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/warrior/arms/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh w aff": {
+    "description": "Wow Wowhead Warlock Affliction",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/warlock/affliction/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh w dem": {
+    "description": "Wow Wowhead Warlock Demonology",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/warlock/demonology/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh w des": {
+    "description": "Wow Wowhead Warlock Destruction",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/warlock/destruction/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh w f": {
+    "description": "Wow Wowhead Warrior Fury",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/warrior/fury/overview-pve-dps\""
+        ]
+      }
+    ]
+  },
+  "wow wh w p": {
+    "description": "Wow Wowhead Warrior Protection",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.wowhead.com/guide/classes/warrior/protection/overview-pve-tank\""
+        ]
+      }
+    ]
+  },
+  "wow wla": {
+    "description": "Wow Warcraft Logs Uploader App",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "TryGetValueFromINIFile(\"WowWarcraftLogUploader\")"
+        ]
+      }
+    ]
+  },
+  "wow wlw": {
+    "description": "Wow Warcraft Logs Website",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.warcraftlogs.com/profile\""
+        ]
+      }
+    ]
+  },
+  "wuwa chars": {
+    "description": "Wuthering Waves Character Tier List",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://game8.co/games/Wuthering-Waves/archives/454729\""
+        ]
+      }
+    ]
+  },
+  "wuwa guides": {
+    "description": "Wuthering Waves Guides",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.prydwen.gg/wuthering-waves/guides/\""
+        ]
+      }
+    ]
+  },
+  "yth": {
+    "description": "YouTube Home",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.youtube.com\""
+        ]
+      }
+    ]
+  },
+  "yts ": {
+    "description": "YouTube Search",
+    "ops": [
+      {
+        "type": "query",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=REPLACEME"
+      }
+    ]
+  },
+  "ytw": {
+    "description": "YouTube Watch Later",
+    "ops": [
+      {
+        "func": "close_lngui",
+        "args": []
+      },
+      {
+        "func": "TryRun",
+        "args": [
+          "\"https://www.youtube.com/playlist?list=WL\""
+        ]
+      }
+    ]
+  }
+}
