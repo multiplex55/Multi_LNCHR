@@ -73,7 +73,7 @@ run_ReplaceText(replacement, runString) {
     }
     ; assume proper formatting for command line stuff
     runString := StrReplace(runstring, "REPLACEME", replacement)
-    tryrun(runString)
+    TryRun(runString)
 }
 
 
@@ -107,65 +107,20 @@ GetActiveExplorerPath()
 
 SearchLNCHRFileAndGenerateHelp()
 {
-    commands := Map()
-    fullCommandBlocks := Map()
+    jsonText := FileRead("commands.json")
+    commands := Jsons.Load(&jsonText)
     longestCommand := 0
-
-    LNCHR_COMMAND_FILE_NAME := "LNCHR-Commands.ahk"
-    commandShortName := ""
-    currentCommandBlock := ""
-    inCommand := false
-
-    loop read LNCHR_COMMAND_FILE_NAME
+    for key, obj in commands
     {
-        if (InStr(A_LoopReadLine, "==") and InStr(A_LoopReadLine, ";"))
-        {
-            inCommand := true
-            firstQuote := InStr(A_LoopReadLine, "`"")
-            secondQuote := InStr(A_LoopReadLine, "`"", false, 1, 2)
-            commandShortName := Trim(SubStr(A_LoopReadLine, firstQuote + 1, (secondQuote - firstQuote) - 1))
-            commandDesc := Trim(SubStr(A_LoopReadLine, InStr(A_LoopReadLine, ";") + 1))
-
-            if (StrLen(commandShortName) > longestCommand)
-            {
-                longestCommand := StrLen(commandShortName)
-            }
-            commands[commandShortName] := commandDesc
-
-            currentCommand := A_LoopReadLine . "`n"
-            fullCommandBlocks[commandShortName] := currentCommand
-        }
-        else if (InStr(A_LoopReadLine, "}") and inCommand == true and not InStr(A_LoopReadLine, "`"") and not InStr(A_LoopReadLine, "'"))
-        {
-            inCommand := false
-            currentCommand := currentCommand . A_LoopReadLine . "`n"
-            fullCommandBlocks[commandShortName] := currentCommand
-        }
-        else if (inCommand == true)
-        {
-            currentCommand := currentCommand . A_LoopReadLine . "`n"
-            fullCommandBlocks[commandShortName] := currentCommand
-        }
+        if (StrLen(key) > longestCommand)
+            longestCommand := StrLen(key)
     }
 
     outFile := FileOpen("HELP-Commands.txt", "w")
-
-    for (k, v in commands)
+    for key, obj in commands
     {
-        outFile.WriteLine(Format("{:-" . longestCommand . "}", k) . " : " . v)
+        outFile.WriteLine(Format("{:-" . longestCommand . "}", key) . " : " . obj["description"])
     }
-
-    outFile.Close()
-
-    outFile := FileOpen(LNCHR_COMMAND_FILE_NAME, "w")
-    outFile.WriteLine("lngui_run_commands(input)")
-    outFile.WriteLine("{")
-    for (k, v in fullCommandBlocks)
-    {
-        outFile.WriteLine(v)
-    }
-    outFile.WriteLine("")
-    outFile.WriteLine("}")
     outFile.Close()
 }
 
@@ -193,6 +148,30 @@ SortLNCHRConfigFile()
     }
 }
 
+SetClipboardFromINI(key)
+{
+    A_Clipboard := TryGetValueFromINIFile(key)
+}
+
+ExpandVars(str)
+{
+    while RegExMatch(str, "%(.*?)%", &match)
+    {
+        name := match[1]
+        value := ""
+        try value := %name%
+        catch
+        {
+            try value := EnvGet(name)
+            catch value := ""
+        }
+        if (value == "")
+            value := TryGetValueFromINIFile(name)
+        str := StrReplace(str, "%" name "%", value)
+    }
+    return str
+}
+
 OpenVolumeMixer() {
     ; Try to activate the Volume Mixer window if it exists
     if WinExist("ahk_class #32770") {
@@ -205,7 +184,7 @@ OpenVolumeMixer() {
 
 OpenAutohotkeyHelpWithDarkMode()
 {
-    tryrun(TryGetValueFromINIFile("AutohotkeyHelpPath"))
+    TryRun(TryGetValueFromINIFile("AutohotkeyHelpPath"))
     Sleep(500)
     WinActivate("AutoHotkey v2 Help")
     if (WinActive("AutoHotkey v2 Help"))
@@ -302,7 +281,7 @@ js_math_exp_helper(exp)
 
 
 run_calc_shortcut_then_return(s) {
-    tryrun(s)
+    TryRun(s)
     set_lngui_input()
     Sleep(200)
     WinActivate(lngui.Hwnd)

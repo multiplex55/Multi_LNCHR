@@ -33,7 +33,7 @@ lngui_props.query_autocomplete := True
 
 lngui_props.title := " 🚀 LNCHR" ; restore the title
 lngui_props.configFileName := "LNCHR-ConfigFile.ini"
-lngui_props.commandBlockMap := ParseFileForIfStatements("LNCHR-Commands.ahk")
+lngui_props.commandBlockMap := ParseCommandsConfig("commands.json")
 lngui_props.commandBlockMapSearchMatch := [] ; Used in Search Mode - holds LNCHRCommandBlock
 
 LoadTimersFromIni()
@@ -365,24 +365,17 @@ lngui_autocomplete() {
 }
 
 ; ______________________________________________________________________________ Search Mode  ___________
-ParseFileForIfStatements(filePath)
+ParseCommandsConfig(filePath)
 {
     parseDict := Map()
+    jsonText := FileRead(filePath)
+    commands := Jsons.Load(&jsonText)
 
-    fileContent := FileRead(filePath)
-    matches := []
-
-    RegExMatchAll(fileContent, '(?ms)if\s*\(\s*input\s*==\s*"([^"]+)"\s*\)\s*;(.*?)\{.*?\}', &matches)
-
-    for match in matches
+    for key, obj in commands
     {
-        if (match != "")
-        {
-            ; 1 is full, 2 is short, 3 is description
-            key := match[3]
-            value := LNCHRCommandBlock(match[1], match[2], StrReplace(match[3], "`n", ""))
-            parseDict[key] := value
-        }
+        desc := obj["description"]
+        value := LNCHRCommandBlock("", key, desc)
+        parseDict[key] := value
     }
 
     return parseDict
@@ -509,7 +502,7 @@ restartNeovide()
     {
         winclose("Neovide")
     }
-    tryrun(TryGetValueFromINIFile("Neovide"))
+    TryRun(TryGetValueFromINIFile("Neovide"))
 }
 
 Suspend 0 ; re-enable hot keys
