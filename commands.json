@@ -345,9 +345,9 @@
     "description": "Chrome Incognito",
     "ops": [
       {
-        "type": "queryfunc",
+        "type": "query",
         "label": "Google Private",
-        "function": "make_run_ReplaceTexts_func( \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe -incognito https://www.google.com/search?q=REPLACEME\" )"
+        "url": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe -incognito https://www.google.com/search?q=REPLACEME"
       }
     ]
   },
@@ -385,9 +385,9 @@
     "description": "Exercise RX Search",
     "ops": [
       {
-        "type": "queryfunc",
+        "type": "query",
         "label": "Exercise RX Search",
-        "function": "make_run_ReplaceTexts_func( \"https://www.google.com/search?num=50&safe=off&site=&source=hp&q=site:https://exrx.net/ REPLACEME&btnG=Search&oq=&gs_l=\" )"
+        "url": "https://www.google.com/search?num=50&safe=off&site=&source=hp&q=site:https://exrx.net/ REPLACEME&btnG=Search&oq=&gs_l="
       }
     ]
   },
