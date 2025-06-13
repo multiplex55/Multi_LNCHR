@@ -199,21 +199,21 @@ lngui_run_commands(input)
     if (input == "fdesk") ; Folder desk
     {
         close_lngui()
-        tryrun('"C:\Users\' A_Username '\Desktop"')
+        tryrun('"C:\Users\%A_Username%\Desktop"')
         return
     }
 
     if (input == "fdoc") ; Folder My Documents
     {
         close_lngui()
-        tryrun('"C:\Users\' A_Username '\Documents"')
+        tryrun('"C:\Users\%A_Username%\Documents"')
         return
     }
 
     if (input == "fdown") ; Folder Downloads
     {
         close_lngui()
-        tryrun('"C:\Users\' A_Username '\Downloads"')
+        tryrun('"C:\Users\%A_Username%\Downloads"')
         return
     }
 
@@ -373,8 +373,7 @@ lngui_run_commands(input)
     if (input == "ont") ; OnTopReplica
     {
         close_lngui()
-        tryrun("C:\Users\" . A_Username .
-            "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OnTopReplica\OnTopReplica.lnk")
+        tryrun("C:\Users\%A_Username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OnTopReplica\OnTopReplica.lnk")
         return
     }
 
@@ -634,7 +633,7 @@ lngui_run_commands(input)
     if (input == "vsc") ; Run Visual Studio Code
     {
         close_lngui()
-        TryRun("C:\Users\" . A_Username . "\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+        TryRun("C:\Users\%A_Username%\AppData\Local\Programs\Microsoft VS Code\Code.exe")
         return
     }
 

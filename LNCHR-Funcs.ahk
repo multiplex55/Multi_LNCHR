@@ -12,6 +12,7 @@
 
 
 TryRun(s) {
+    s := ExpandVars(s)
     try {
         run s
     }
@@ -20,6 +21,28 @@ TryRun(s) {
         ToolTip("failed to run:`n" s, 500, 0)
         SetTimer(() => ToolTip(), -3000)
     }
+}
+
+ExpandVars(str) {
+    return RegExReplace(str, "%([^%]+)%", ExpandVars_Callback)
+}
+
+ExpandVars_Callback(match) {
+    name := match[1]
+    val := ""
+    try val := %name%
+    catch {}
+    if (val == "")
+    {
+        try val := EnvGet(name)
+        catch {}
+    }
+    if (val == "")
+    {
+        try val := TryGetValueFromINIFile(name)
+        catch {}
+    }
+    return val
 }
 
 
