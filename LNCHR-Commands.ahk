@@ -28,6 +28,8 @@ lngui_run_commands(input)
             {
                 args := op.Has("args") ? op["args"] : []
                 fn := op["func"]
+                if (fn = "TryRun" && args.Length >= 1)
+                    args[1] := ExpandVars(args[1])
                 (%fn%)(args*)
             }
             else if (op.Has("type"))

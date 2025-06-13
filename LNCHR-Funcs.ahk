@@ -153,6 +153,25 @@ SetClipboardFromINI(key)
     A_Clipboard := TryGetValueFromINIFile(key)
 }
 
+ExpandVars(str)
+{
+    while RegExMatch(str, "%(.*?)%", &match)
+    {
+        name := match[1]
+        value := ""
+        try value := %name%
+        catch
+        {
+            try value := EnvGet(name)
+            catch value := ""
+        }
+        if (value == "")
+            value := TryGetValueFromINIFile(name)
+        str := StrReplace(str, "%" name "%", value)
+    }
+    return str
+}
+
 OpenVolumeMixer() {
     ; Try to activate the Volume Mixer window if it exists
     if WinExist("ahk_class #32770") {
