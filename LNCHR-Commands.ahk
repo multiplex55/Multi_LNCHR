@@ -27,7 +27,8 @@ lngui_run_commands(input)
             if (op.Has("func"))
             {
                 args := op.Has("args") ? op["args"] : []
-                Func(op["func"]).Call(args*)
+                fn := op["func"]
+                (%fn%)(args*)
             }
             else if (op.Has("type"))
             {
