@@ -20,26 +20,27 @@ lngui_run_commands(input)
         return
 
     cmd := cmds[input]
-    if (cmd.Has("type"))
-    {
-        switch cmd["type"]
-        {
-            case "query":
-                lngui_enable_query(cmd["label"], make_run_ReplaceTexts_func(cmd["url"]))
-                return
-            case "queryfunc":
-                lngui_enable_query(cmd["label"], Func(cmd["function"]))
-                return
-        }
-    }
-
     if (cmd.Has("ops"))
     {
         for _, op in cmd["ops"]
         {
-            fn := op["func"]
-            args := op.HasOwnProp("args") ? op["args"] : []
-            Func(fn).Call(args*)
+            if (op.Has("func"))
+            {
+                args := op.Has("args") ? op["args"] : []
+                Func(op["func"]).Call(args*)
+            }
+            else if (op.Has("type"))
+            {
+                switch op["type"]
+                {
+                    case "query":
+                        lngui_enable_query(op["label"], make_run_ReplaceTexts_func(op["url"]))
+                        return
+                    case "queryfunc":
+                        lngui_enable_query(op["label"], Func(op["function"]))
+                        return
+                }
+            }
         }
     }
 }
